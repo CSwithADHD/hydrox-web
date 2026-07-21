@@ -18,7 +18,7 @@ export function FitnessClass() {
   return (
     <section id="services" className="py-20 md:py-[100px]">
       <Container>
-        <h2 className="mb-8 font-heading text-fluid-2xl uppercase tracking-wide text-white glow-text-sm md:mb-10">
+        <h2 className="mb-8 font-heading text-fluid-2xl uppercase tracking-wide text-white md:mb-10">
           Fitness Class With Us
         </h2>
 
@@ -39,7 +39,7 @@ export function FitnessClass() {
           id={`panel-${activeTab.replace(/\s+/g, '-').toLowerCase()}`}
           aria-labelledby={`tab-${activeTab.replace(/\s+/g, '-').toLowerCase()}`}
         >
-          {/* Left: Content card in cream panel */}
+          {/* Left: Content card */}
           <motion.div
             variants={itemVariants}
             className="flex flex-col justify-between rounded-[40px] bg-card-light p-8 md:p-10 lg:min-h-[500px]"
@@ -92,11 +92,11 @@ export function FitnessClass() {
 
             {/* Vertical pill label on right edge */}
             <div
-              className="absolute -right-2 top-1/2 hidden -translate-y-1/2 rounded-full bg-accent px-2.5 py-10 md:block"
+              className="absolute -right-2 top-1/2 hidden -translate-y-1/2 rounded-full bg-card-dark px-2.5 py-10 md:block"
               aria-hidden
             >
               <span
-                className="font-heading text-xs uppercase tracking-[0.25em] text-black"
+                className="font-heading text-xs uppercase tracking-[0.25em] text-white"
                 style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
               >
                 {content.pillLabel}
@@ -108,7 +108,7 @@ export function FitnessClass() {
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-              className="absolute -bottom-5 -left-5 flex h-16 w-16 items-center justify-center rounded-full bg-accent text-black shadow-lg shadow-accent/40 md:h-20 md:w-20"
+              className="absolute -bottom-5 -left-5 flex h-16 w-16 items-center justify-center rounded-full bg-accent text-white shadow-lg shadow-accent/40 md:h-20 md:w-20"
               aria-label="View class details"
             >
               <ArrowUpRight size={28} strokeWidth={3} />
