@@ -3,21 +3,25 @@
 @theme {
   --color-bg: #050505;
   --color-bg-alt: #0a0a0a;
-  --color-card-dark: #111111;
-  --color-card-light: #1a1a1a;
+  --color-card-dark: #0f0f0f;
+  --color-card-light: #181818;
   --color-accent: #a4d10a;
-  --color-accent-alt: #8cb508;
+  --color-accent-alt: #8fb80a;
   --color-text-white: #ffffff;
   --color-text-gray: #aaaaaa;
   --color-text-gray-light: #cccccc;
   --color-text-dark: #ffffff;
 
-  --font-heading: "Bebas Neue", "Anton", sans-serif;
+  --font-heading: "Bebas Neue", "Anton", "Oswald", sans-serif;
   --font-body: "Inter", "Poppins", sans-serif;
 
   --radius-card: 40px;
   --radius-hero: 48px;
   --radius-pill: 999px;
+
+  --shadow-glow-sm: 0 0 8px rgba(164, 209, 10, 0.3);
+  --shadow-glow-md: 0 0 16px rgba(164, 209, 10, 0.4);
+  --shadow-glow-lg: 0 0 24px rgba(164, 209, 10, 0.5);
 }
 
 @layer base {
@@ -131,18 +135,6 @@
     background-size: 200px 200px;
   }
 
-  .glow-green {
-    text-shadow: 0 0 20px rgba(164, 209, 10, 0.5), 0 0 40px rgba(164, 209, 10, 0.25);
-  }
-
-  .glow-green-sm {
-    text-shadow: 0 0 10px rgba(164, 209, 10, 0.4);
-  }
-
-  .shadow-glow {
-    box-shadow: 0 0 20px rgba(164, 209, 10, 0.3), 0 0 40px rgba(164, 209, 10, 0.15);
-  }
-
   .nav-link {
     position: relative;
     font-size: clamp(0.68rem, 0.63rem + 0.18vw, 0.78rem);
@@ -156,7 +148,7 @@
 
   .nav-link:hover,
   .nav-link:focus-visible {
-    color: var(--color-accent);
+    color: #a4d10a;
     outline: none;
   }
 }
