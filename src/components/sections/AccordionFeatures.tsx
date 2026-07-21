@@ -21,7 +21,7 @@ export function AccordionFeatures() {
             <motion.div
               key={item.id}
               variants={itemVariants}
-              whileHover={{ backgroundColor: '#2a2a2a' }}
+              whileHover={{ backgroundColor: '#1a1a1a' }}
               transition={{ duration: 0.3 }}
               className="flex items-center justify-between rounded-full bg-card-dark px-7 py-5 md:px-10 md:py-6"
             >
@@ -34,7 +34,7 @@ export function AccordionFeatures() {
                 </p>
               </div>
 
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent text-black shadow-md shadow-accent/25">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-accent text-white shadow-md shadow-accent/25">
                 <ArrowUpRight size={20} strokeWidth={3} aria-hidden />
               </span>
             </motion.div>
