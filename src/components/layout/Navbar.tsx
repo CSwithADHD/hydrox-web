@@ -10,17 +10,20 @@ export function Navbar() {
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="mx-auto flex h-[56px] w-[95%] max-w-[1100px] items-center justify-between rounded-full bg-card-light px-6 shadow-lg shadow-black/15 md:h-[64px] md:px-10"
+          className="mx-auto flex h-[56px] w-[95%] max-w-[1100px] items-center justify-between rounded-full bg-card-light px-6 shadow-lg shadow-accent/10 md:h-[64px] md:px-10 border border-accent/20"
           aria-label="Main navigation"
         >
           {/* Logo */}
           <a
             href="#home"
-            className="flex items-center gap-1.5 font-heading text-lg tracking-[0.08em] text-text-dark md:text-xl"
-            aria-label="Fitness Club home"
+            className="flex items-center gap-1.5"
+            aria-label="D.HOG Hydroxy Gym home"
           >
-            FITNESS CLUB
-            <span className="text-accent text-base md:text-lg" aria-hidden="true">✦</span>
+            <img
+              src="/dhog_logo.svg"
+              alt="D.HOG Hydroxy Gym"
+              className="h-9 w-auto md:h-10"
+            />
           </a>
 
           {/* Nav links */}

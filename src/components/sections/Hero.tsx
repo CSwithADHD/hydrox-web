@@ -38,7 +38,7 @@ export function Hero() {
             {/* Left: Headline + description */}
             <div className="flex flex-col gap-6">
               <motion.div variants={itemVariants}>
-                <h1 className="font-heading uppercase text-text-dark text-fluid-hero leading-[0.85]">
+                <h1 className="font-heading uppercase text-text-dark text-fluid-hero leading-[0.85] glow-text">
                   {heroContent.line1}
                   <br />
                   <span className="relative inline-block">
@@ -110,7 +110,7 @@ export function Hero() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: 'spring', stiffness: 400, damping: 17 }}
-              className="absolute -bottom-4 -left-4 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-white shadow-lg shadow-accent/40 md:h-16 md:w-16"
+              className="absolute -bottom-4 -left-4 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-black shadow-lg shadow-accent/40 md:h-16 md:w-16"
               aria-label="Get started"
             >
               <ArrowUpRight size={24} strokeWidth={3} />

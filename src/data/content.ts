@@ -160,6 +160,52 @@ export const classCards = [
   },
 ] as const;
 
+export const helpCards = [
+  {
+    title: 'Personal Training',
+    description: 'One-on-one sessions tailored to your goals with certified experts who track your progress.',
+    image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&q=80&auto=format&fit=crop',
+    cta: 'Start Now',
+  },
+  {
+    title: 'Nutrition Plans',
+    description: 'Custom meal plans and nutrition coaching to fuel your workouts and maximize results.',
+    image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80&auto=format&fit=crop',
+    cta: 'Learn More',
+  },
+] as const;
+
+export const pricingPlans = {
+  daily: {
+    name: 'Daily Pass',
+    price: 15,
+    period: '/day',
+    features: ['Full gym access', '1 group class', 'Locker room', 'Free WiFi', 'Guest pass'],
+  },
+  weekly: {
+    name: 'Weekly Plan',
+    price: 35,
+    period: '/week',
+  },
+  monthly: {
+    name: 'Monthly Plan',
+    price: 99,
+    period: '/month',
+  },
+  yearly: {
+    name: 'Yearly Membership',
+    price: 799,
+    period: '/year',
+  },
+} as const;
+
+export const socialLinks = [
+  { platform: 'Instagram', handle: '@dhog.hydroxy', href: 'https://instagram.com' },
+  { platform: 'Twitter', handle: '@dhoghydroxy', href: 'https://twitter.com' },
+  { platform: 'Facebook', handle: 'D.HOG Hydroxy Gym', href: 'https://facebook.com' },
+  { platform: 'LinkedIn', handle: 'D.HOG Hydroxy Gym', href: 'https://linkedin.com' },
+] as const;
+
 export const footerInfo = {
   phone: '+1 (555) 123-4567',
   email: 'hello@hydroxgym.com',

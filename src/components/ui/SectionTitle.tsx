@@ -35,7 +35,7 @@ export function SectionTitle({
       <h2
         className={clsx(
           'font-heading uppercase tracking-wide text-fluid-2xl md:text-fluid-3xl',
-          light ? 'text-white' : 'text-[#1a1a1a]',
+          light ? 'text-white' : 'text-white',
         )}
       >
         <span className={underlineClass}>{children}</span>

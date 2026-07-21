@@ -9,7 +9,7 @@ export function Classes() {
   return (
     <section id="gallery" className="py-20 md:py-[100px]">
       <Container>
-        <h2 className="mb-10 font-heading text-fluid-2xl uppercase tracking-wide text-white md:mb-14">
+        <h2 className="mb-10 font-heading text-fluid-2xl uppercase tracking-wide text-white glow-text-sm md:mb-14">
           Classes
         </h2>
 
@@ -43,7 +43,7 @@ export function Classes() {
                   </h3>
                   <p className="text-fluid-xs text-text-gray-light">{card.time}</p>
                 </div>
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-card-dark text-text-gray-light transition-colors group-hover:bg-accent group-hover:text-white">
+                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-card-dark text-text-gray-light transition-colors group-hover:bg-accent group-hover:text-black">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="7" y1="17" x2="17" y2="7" />
                     <polyline points="7 7 17 7 17 17" />

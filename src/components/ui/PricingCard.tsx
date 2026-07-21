@@ -29,7 +29,7 @@ export function PricingCard({
       className={clsx(
         'flex flex-col rounded-[28px] p-6 md:p-8',
         featured
-          ? 'bg-card-light text-[#1a1a1a]'
+          ? 'bg-card-light text-white'
           : 'bg-card-dark text-white',
         fullWidth && 'md:flex-row md:items-center md:justify-between md:gap-8',
         className,
@@ -69,7 +69,7 @@ export function PricingCard({
         <ul className="mt-6 flex flex-col gap-3">
           {features.map((feature) => (
             <li key={feature} className="flex items-center gap-3 text-fluid-sm">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent text-white">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent text-black">
                 <Check size={14} aria-hidden />
               </span>
               {feature}
@@ -82,7 +82,7 @@ export function PricingCard({
         variant={featured ? 'secondary' : 'primary'}
         className={clsx(
           'mt-6 w-full md:w-auto',
-          !featured && 'bg-white text-[#1a1a1a] hover:bg-white/90',
+          !featured && 'bg-accent text-black hover:bg-accent-alt',
           fullWidth && 'md:mt-0 md:shrink-0',
         )}
       >

@@ -12,9 +12,12 @@ interface ButtonProps extends Omit<HTMLMotionProps<'button'>, 'children'> {
 }
 
 const variantStyles = {
-  primary: 'bg-[#1a1a1a] text-white hover:bg-[#2a2a2a]',
-  secondary: 'bg-accent text-white hover:bg-accent-alt',
-  outline: 'border-2 border-[#1a1a1a]/20 text-[#1a1a1a] bg-transparent hover:bg-[#1a1a1a] hover:text-white',
+  primary:
+    'bg-accent text-black font-bold hover:bg-accent-alt shadow-glow',
+  secondary:
+    'bg-card-dark text-accent border-2 border-accent font-bold hover:bg-accent hover:text-black',
+  outline:
+    'border-2 border-accent text-accent bg-transparent font-bold hover:bg-accent hover:text-black',
 };
 
 const sizeStyles = {
@@ -31,6 +34,8 @@ export function Button({
   className,
   ...props
 }: ButtonProps) {
+  const isAccentBg = variant === 'primary';
+
   return (
     <motion.button
       whileHover={{ scale: 1.03 }}
@@ -46,7 +51,14 @@ export function Button({
     >
       {children}
       {showIcon && (
-        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-accent md:h-8 md:w-8">
+        <span
+          className={clsx(
+            'flex h-7 w-7 items-center justify-center rounded-full md:h-8 md:w-8',
+            isAccentBg
+              ? 'bg-black/20 text-black'
+              : 'bg-accent text-black',
+          )}
+        >
           <ArrowUpRight size={16} strokeWidth={3} />
         </span>
       )}

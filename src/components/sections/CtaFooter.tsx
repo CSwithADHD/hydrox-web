@@ -19,7 +19,7 @@ export function CtaFooter() {
         >
           <div className="flex flex-col items-center gap-8 text-center md:flex-row md:justify-between md:text-left">
             <div className="max-w-lg">
-              <h2 className="font-heading uppercase text-text-dark text-fluid-2xl md:text-fluid-3xl leading-[0.95]">
+              <h2 className="font-heading uppercase text-text-dark text-fluid-2xl md:text-fluid-3xl leading-[0.95] glow-text-sm">
                 Start Your
                 <br />
                 Fitness Journey

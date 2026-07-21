@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #0d0d0d;
-  --color-bg-alt: #121212;
-  --color-card-dark: #1a1a1a;
-  --color-card-light: #f3efe8;
-  --color-accent: #e8432f;
-  --color-accent-alt: #d03a28;
+  --color-bg: #050505;
+  --color-bg-alt: #0a0a0a;
+  --color-card-dark: #111111;
+  --color-card-light: #1a1a1a;
+  --color-accent: #a4d10a;
+  --color-accent-alt: #8cb508;
   --color-text-white: #ffffff;
-  --color-text-gray: #777777;
-  --color-text-gray-light: #999999;
-  --color-text-dark: #1a1a1a;
+  --color-text-gray: #aaaaaa;
+  --color-text-gray-light: #cccccc;
+  --color-text-dark: #ffffff;
 
   --font-heading: "Bebas Neue", "Anton", sans-serif;
   --font-body: "Inter", "Poppins", sans-serif;
@@ -131,20 +131,32 @@
     background-size: 200px 200px;
   }
 
+  .glow-green {
+    text-shadow: 0 0 20px rgba(164, 209, 10, 0.5), 0 0 40px rgba(164, 209, 10, 0.25);
+  }
+
+  .glow-green-sm {
+    text-shadow: 0 0 10px rgba(164, 209, 10, 0.4);
+  }
+
+  .shadow-glow {
+    box-shadow: 0 0 20px rgba(164, 209, 10, 0.3), 0 0 40px rgba(164, 209, 10, 0.15);
+  }
+
   .nav-link {
     position: relative;
     font-size: clamp(0.68rem, 0.63rem + 0.18vw, 0.78rem);
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #555;
+    color: #888;
     transition: color 0.2s ease;
     text-decoration: none;
   }
 
   .nav-link:hover,
   .nav-link:focus-visible {
-    color: #1a1a1a;
+    color: var(--color-accent);
     outline: none;
   }
 }

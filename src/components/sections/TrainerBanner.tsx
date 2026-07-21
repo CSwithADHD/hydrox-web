@@ -17,16 +17,16 @@ export function TrainerBanner() {
           className="relative flex items-center gap-6 overflow-hidden rounded-full bg-accent px-8 py-5 md:px-12 md:py-7"
         >
           {/* Sparkle icon */}
-          <span className="font-heading text-2xl text-white/80 md:text-3xl" aria-hidden="true">
+          <span className="font-heading text-2xl text-black/70 md:text-3xl" aria-hidden="true">
             ✦
           </span>
 
           {/* Text */}
           <div className="flex-1">
-            <h2 className="font-heading text-fluid-xl uppercase tracking-wide text-white md:text-fluid-2xl">
+            <h2 className="font-heading text-fluid-xl uppercase tracking-wide text-black md:text-fluid-2xl">
               {trainerBannerContent.title}
             </h2>
-            <p className="mt-1 max-w-md text-fluid-xs text-white/70">
+            <p className="mt-1 max-w-md text-fluid-xs text-black/70">
               {trainerBannerContent.description}
             </p>
           </div>

@@ -17,7 +17,7 @@ export function Badge({ children, className, size = 'md' }: BadgeProps) {
   return (
     <div
       className={clsx(
-        'flex flex-col items-center justify-center rounded-full bg-accent text-white font-heading uppercase tracking-wider leading-tight shadow-lg shadow-accent/25',
+        'flex flex-col items-center justify-center rounded-full bg-accent text-black font-heading uppercase tracking-wider leading-tight shadow-lg shadow-accent/25',
         sizeStyles[size],
         className,
       )}

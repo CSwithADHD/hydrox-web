@@ -18,7 +18,7 @@ export function Starburst({ className }: { className?: string }) {
           y1="40"
           x2="40"
           y2="8"
-          stroke="#E64B36"
+          stroke="#a4d10a"
           strokeWidth="2"
           strokeLinecap="round"
           transform={`rotate(${i * 30} 40 40)`}
@@ -42,7 +42,7 @@ export function ScribbleLine({ className }: { className?: string }) {
     >
       <path
         d="M5 25 Q40 5 80 22 T160 18 T195 28"
-        stroke="#E64B36"
+        stroke="#a4d10a"
         strokeWidth="2.5"
         strokeLinecap="round"
         fill="none"

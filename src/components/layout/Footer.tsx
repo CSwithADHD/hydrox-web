@@ -23,12 +23,11 @@ export function Footer() {
             {footerInfo.email}
           </a>
 
-          <span
-            className="font-heading text-lg tracking-[0.15em] text-white"
-            aria-label="Fitness Club"
-          >
-            FITNESS CLUB
-          </span>
+          <img
+            src="/dhog_logo.svg"
+            alt="D.HOG Hydroxy Gym"
+            className="h-8 w-auto"
+          />
 
           <address className="flex items-center gap-2 not-italic text-fluid-xs text-text-gray-light">
             <MapPin size={14} aria-hidden className="shrink-0" />
